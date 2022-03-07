@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <title>Pasteleria Explorer</title>
+
+<style>
+      A {text-decoration: none;}
+      * {
+         box-sizing: border-box;
+        }
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+          background: #659DBD;
+        }
+
+        footer {
+            background-color: #5b717e;
+            padding: 5px;
+            text-align: center;
+            color: white;
+            }
+
+        .header {
+             padding: 10px;
+             margin: auto;
+             text-align: center;
+             background: #557A95;
+             color: white; }
+        
+        .logo {
+          height: 10%;
+          width: 20%;
+          float: left;          
+          padding: 5px;
+          overflow: hidden;
+        }
+
+        .logo img{
+          height: 100%;
+          width: 100%;
+        }
+
+        .logo-text{
+          width: 70%;          
+          padding: 5px;          
+          overflow: hidden;
+        }
+
+       .logo-text h1{
+          font-weight: bold;
+          font-size: 60px; 
+        }
+
+        .title {
+            text-align: center;
+            color: black; 
+            font-family: 'Helvetica', cursive;
+            font-size: 50px;
+            }        
+   
+        .container {
+            position: relative;
+            text-align: center;
+            color: black; 
+            font-family: 'Helvetica', cursive;
+            font-size: 50px;
+        }
+        .centered {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .cliente-container {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .menu-container-left {          
+          width: 50%;
+          float: left;          
+          padding: 5px;
+          overflow: hidden;        
+        }
+
+        .menu-container {
+          width: 50%;          
+          padding: 5px;          
+          overflow: hidden;
+        }
+
+        .menu-text {
+            display: block;
+            color: black;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 25px;
+        }
+
+        .sub-title {
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 35px;
+        }
+
+        .sub-title2 {
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+        
+        }
+
+        .options-left {          
+          width: 50%;
+          float: left;          
+          padding: 5px;
+          overflow: hidden;        
+        }
+
+        .options {
+          width: 50%;          
+          padding: 5px;          
+          overflow: hidden;
+        }
+
+        .form-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 50em;
+        height: 35em;
+        }
+        .input {
+        border: 0.1em solid black;
+        border-radius: 0.3em;
+        width: 34em;
+        height: 2em;
+        margin-top: 1em;
+        margin-left: 1em;
+        }
+        .boton {
+        background-color: #36363d;
+        width: 24em;
+        height: 2em;
+        color: white;
+        border-radius: 0.3em;
+        font-size: 20px;
+        border: 0;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        }
+             
+    </style>
+</head>
+
+<body>
+    <div class="header">
+      <div class="logo">
+        <img src="./images/Logo.png" alt="Logo Pasteleria">
+      </div>
+      <div class="logo-text">
+        <h1>Pasteleria Explorer</h1>
+      </div>
+    </div>
+    <div class="container">
+        <img width="100%" src="./images/banner.png" alt="Postres">
+        <div class="centered">Ricos Pasteles</div>
+      </div>
+    <h3 class="title">MENÚ</h3>
+    <div class="cliente-container">
+        <div class="menu-container-left">
+          <p class="sub-title">Sabores</p>
+          <ul style="list-style: none;">
+            <li class="menu-text">Chocolate -------------------- $150</li>
+            <li class="menu-text">Vainilla ------------------------ $130</li>
+            <li class="menu-text">Combinado -------------------------- $140</li>            
+          </ul>
+        </div>
+        <div class="menu-container">
+          <p class="sub-title">Adornos</p>
+          <ul style="list-style: none;">            
+            <li class="menu-text">Crema de mantequilla ------ + $35</li>
+            <li class="menu-text">Merengue italiano ------------ + $25</li>
+            <li class="menu-text">Relleno de nuez ------------------ + $100</li>
+          </ul>
+        </div>
+      <h3 class="title">REALIZAR PEDIDO</h3>
+    <div class="form-container"> 
+        <div>
+            <input class="input" type="text" name="txtNombreCli" id="txtNombreCli" placeholder="Nombre Completo">
+            <input class="input" type="tel" name="txtTelefonoCli" id="txtTelefonoCli" placeholder="Teléfono" maxlength="10">
+            <input class="input" type="email" name="txtEmailCli" id="txtEmailCli" placeholder="Correo Electrónico">
+            <input class="input" type="text" name="txtDesPastel" id="txtDesPastel" placeholder="Tipo de pastel">
+          </div>
+          <div class="options-left">
+            <p class="sub-title2">Sabores</p>
+            <div>
+              <div>
+                <label for="Chocolate">Chocolate</label>
+                <input type="checkbox" name="Chocolate" id="Chocolate">
+              </div>
+              <div>
+                <label for="Vainilla">Vainilla</label>
+                <input type="checkbox" name="Vainilla" id="Vainilla">
+              </div>
+              <div>
+                <label for="Fresa">Combinado</label>
+                <input type="checkbox" name="Fresa" id="Fresa">
+              </div>            
+            </div>
+          </div>
+          <div class="options">
+            <p class="sub-title2">Adornos</p>
+            <div>
+              <div>
+                <label for="Chispitas">Chispitas de chocolate</label>
+                <input type="checkbox" name="Chispitas" id="Chispitas">
+              </div>
+              <div>
+                <label for="Crema">Crema de mantequilla</label>
+                <input type="checkbox" name="Crema" id="Crema">
+              </div>
+              <div>
+                <label for="Merengue">Merengue italiano</label>
+                <input type="checkbox" name="Merengue" id="Merengue">
+              </div>            
+            </div>
+          </div>
+          <button class="boton" type="submit">Solicitar pedido</button>
+        
+      </div>
+    </div>    
+   <footer>
+        <p>Colonia Centro No. 291    Teléfono 2292881291    Hoario de atencón: 10:00 - 20:30</p>        
+    </footer>
+
+
+</div>
+</body>
+</html>
